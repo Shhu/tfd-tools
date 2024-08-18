@@ -1,12 +1,9 @@
-name: Deploy to GH Pages
+name: CI
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,8 +21,8 @@ jobs:
       - name: 🏗️ Build
         run: npm run build
 
-      - name: Deploy to GH Pages 🚀
-        if: ${{ github.event_name != 'pull_request' }}
+      - name: 🚀Deploy to GitHub Pages🚀 
+        if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
