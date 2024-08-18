@@ -7,6 +7,7 @@ import Unimport from 'unimport/unplugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/tfd-tools/',
   plugins: [
     vue(),
     vueDevTools(),
