@@ -14,7 +14,7 @@ import { amorphous } from '@/collections/amorphous';
       >
         {{ a.code }}
         {{ a.sourceType }}
-        {{ a.openerType }}
+        {{ a.openersType }}
       </li>
     </ul>
   </div>
