@@ -1,3 +1,4 @@
+export type Amorphous = typeof amorphous
 export const amorphous = [
     {
       code: '1',
@@ -188,11 +189,11 @@ export const amorphous = [
       sourceType: 'special_operation',
       openers: ['Stunning Beauty'],
       openersType: ['interception'],
-      drop1: 'EnergyActivator',
-      drop2: 'AfterglowSword',
-      drop3: 'Greg',
-      drop4: 'Smithereens',
-      drop5: 'GleyCode',
+      drop1: 'Energy Activator',
+      drop2: 'Enduring Legacy Synthetic Fiber',
+      drop3: 'Lepic Enhanced Cells',
+      drop4: 'Greg\'s Reversed Fate Blueprint',
+      drop5: 'Gley Enhanced Cells',
     },
     {
       code: '13',
