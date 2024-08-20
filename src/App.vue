@@ -4,17 +4,14 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">
-          Home
-        </RouterLink>
-        <RouterLink to="/amorphous-material-list">
-          Amorphous
-        </RouterLink>
-      </nav>
-    </div>
+    <nav class="max-w-5xl mx-auto">
+      <RouterLink to="/amorphous-material-list">
+        Amorphous
+      </RouterLink>
+    </nav>
   </header>
 
-  <RouterView />
+  <div class="max-w-5xl mx-auto">
+    <RouterView />
+  </div>
 </template>

@@ -12,10 +12,17 @@ export default defineConfig({
     vue(),
     vueDevTools(),
       Unimport.vite({
-        dts: true ,
+        dts: './src/unimport.d.ts' ,
         dirs: [
           './composables/*'
-        ]
+        ],
+        presets: [
+          'vue',
+          'pinia',
+        ],
+        addons: {
+          vueTemplate: true
+        }
       })
   ],
   resolve: {
