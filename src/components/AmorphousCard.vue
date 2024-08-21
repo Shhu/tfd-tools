@@ -6,7 +6,7 @@ defineProps<{
 </script>
 
 <template>
-  <div>
+  <div class="bg-stone-950 rounded-lg p-2 flex">
     <div class="w-16 flex items-center justify-center text-xl font-semibold mr-2 text-sky-200">
       {{ amorphous.code }}
     </div>
